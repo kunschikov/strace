@@ -503,7 +503,7 @@ typedef uint8_t qualbits_t;
 #define exiting(tcp)	((tcp)->flags & TCB_INSYSCALL)
 #define syserror(tcp)	((tcp)->u_error != 0)
 #define verbose(tcp)	((tcp)->qual_flg & QUAL_VERBOSE)
-#define abbrev(tcp)	((tcp)->qual_flg & QUAL_ABBREV)
+#define abbrev(tcp)	     0
 #define filtered(tcp)	((tcp)->flags & TCB_FILTERED)
 
 struct xlat {
